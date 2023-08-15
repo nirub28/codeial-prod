@@ -9,7 +9,6 @@ const logger=require('morgan');
 
 
 
-
 const app = express();
 const port = 8000;
 const expresslayouts = require('express-ejs-layouts');
@@ -83,12 +82,12 @@ app.use(session({
    },
 
      store : new MongoStore({
-      mongoUrl : "mongodb+srv://nirub:nirub@cluster0.fmstxtx.mongodb.net/hsopital?retryWrites=true&w=majority ",
+      mongoUrl : "mongodb+srv://nirub:nirub@cluster0.ovxsvph.mongodb.net/same?retryWrites=true&w=majority",
       autoremove : "disabled",
   },function(err){
       console.log("error at mongo store",err || "connection established to store cookie");
   })
-
+  
 }));
 
 app.use(passport.initialize());
