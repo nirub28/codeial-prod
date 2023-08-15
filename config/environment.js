@@ -26,8 +26,8 @@ const development={
             pass: process.env.CODEIAL_smtp_pass 
         }
     },
-    google_client_id:process.env.CODEIAL_google_client_id,
-    google_client_Secret: process.env.CODEIAL_google_client_Secret,
+    google_client_id:"231182464812-f9etpgbqn52adh5bqtcbiojdd4sskhjk.apps.googleusercontent.com",
+    google_client_Secret:"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",
     google_call_back_url: "http://localhost:8000/users/auth/google/callback",
     jwt_secret:'codeial',
     morgan:{
