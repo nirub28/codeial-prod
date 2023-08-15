@@ -1,0 +1,82 @@
+/* Styling for the user profile container */
+.user-profile {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgb(134, 133, 133);
+}
+
+/* Styling for the user avatar */
+.user-avatar {
+  display: block;
+  margin: 0 auto;
+  max-width: 100px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the user profile form */
+.user-profile form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-profile input[type="text"],
+.user-profile input[type="email"],
+.user-profile input[type="file"],
+.user-profile input[type="submit"] {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#subbtn{
+  background-color: green;
+  width: 100px;
+  height: 40px;
+}
+#subbtn:hover{
+  cursor: pointer;
+  color: white;
+  
+}
+
+/* Styling for the "Add Friend" button */
+#addbutton #submit-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+}
+
+#addbutton #submit-button:hover {
+  background-color: #0056b3;
+  color: black;
+  cursor: pointer;
+}
+
+/* Styling for the user details */
+.user-details p {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Styling for the "Google Sign In/Up" link */
+.user-profile p a {
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.user-profile p a:hover {
+  text-decoration: underline;
+}

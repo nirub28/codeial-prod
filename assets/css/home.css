@@ -1,0 +1,30 @@
+html {
+  height: 100%; }
+
+#home-container {
+  min-height: 100%;
+  display: flex;
+  /* change*/
+  /* change*/ }
+  #home-container #feed-posts {
+    width: 50%;
+    padding: 10px; }
+  #home-container #user-all {
+    width: 30px;
+    padding: 10px;
+    border-left: 1px solid gray; }
+    #home-container #user-all a {
+      color: #22b9be; }
+  #home-container #user-friends {
+    width: 50px;
+    padding: 10px;
+    border-left: 1px solid gray; }
+
+#delete-atag {
+  color: red; }
+
+.toggle-like-buttton {
+  color: #44b832; }
+  .frinda{text-decoration: none; color: black;}
+  .frindaa{text-decoration: none; color: red;}
+

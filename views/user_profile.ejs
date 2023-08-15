@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="/css/user_profile.css" />
+
+<div class="user-profile">
+  <img
+    src="<%= user.avatar %>"
+    alt="<%= user.name %>"
+    class="user-avatar"
+    width="100"
+  />
+
+  <% if (user.id == profile_user.id) { %>
+  <form
+    action="/users/update/<%= profile_user.id %>"
+    enctype="multipart/form-data"
+    method="post"
+
+    
+  > 
+   <div class="user-details">
+    <p><b>Name:</b> <%= profile_user.name %></p>
+    <p><b>Email:</b> <%= profile_user.email %></p>
+  </div>
+  <p>Want to update your details?</p>
+    <input type="text" name="name" placeholder="New Name" required />
+    <input type="email" name="email" placeholder="New/Present Email" required />
+    <input type="file" name="avatar" placeholder="profile picture" />
+    <input id="subbtn" type="submit" value="Update" />
+  </form>
+  <% } else { %>
+  <div class="user-details">
+    <p><b>Name:</b> <%= profile_user.name %></p>
+    <p><b>Email:</b> <%= profile_user.email %></p>
+  </div>
+
+  <form
+    id="addbutton"
+    action="/users/friends/add-friend/<%= profile_user.id %>/<%= profile_user.name%>"
+    method="post"
+  >
+    <input id="submit-button" type="submit" value="Add Friend" />
+  </form>
+  <% } %>
+</div>
