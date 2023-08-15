@@ -1,7 +1,7 @@
 module.exports.chatSockets=function(socketServer){
     let io= require('socket.io')(socketServer, {
         cors: {
-            origin: "http://localhost:8000", // Replace with your frontend URL
+            origin: "https://codeial-placement.onrender.com/", // Replace with your frontend URL
             methods: ["GET", "POST"],
             credentials: true
         }
